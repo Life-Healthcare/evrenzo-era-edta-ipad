@@ -1,9 +1,10 @@
 import React from "react";
+import { ScreensaverWrapper } from "@/pages/screensaver/screensaver.styles";
 
 export default function Screensaver() {
   return (
-    <main>
+    <ScreensaverWrapper to="/home">
       <h1>Screensaver</h1>
-    </main>
+    </ScreensaverWrapper>
   );
 }

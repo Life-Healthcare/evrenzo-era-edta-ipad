@@ -1,6 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
 export const AppReset = createGlobalStyle`
+  :root {
+    --root-size: 20px;
+    --speed: 400ms;
+    --ease: ease;
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -19,11 +25,19 @@ export const AppReset = createGlobalStyle`
   }
 
   html {
-    font-size: 20px;
+    font-size: var(--root-size);
     font-family: Arial, sans-serif;
     font-weight: normal;
     line-height: 1em;
     background-color: #1e1e1e;
     color: #fefefe;
+    background-image: url("/assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  svg, img, video {
+    display: block;
   }
 `;
