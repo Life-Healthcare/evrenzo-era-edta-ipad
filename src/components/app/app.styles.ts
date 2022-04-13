@@ -5,6 +5,8 @@ export const AppReset = createGlobalStyle`
     --root-size: 20px;
     --speed: 400ms;
     --ease: ease;
+    --device-width: 2048;
+    --device-height: 1536;
   }
 
   * {
@@ -31,7 +33,7 @@ export const AppReset = createGlobalStyle`
     line-height: 1em;
     background-color: #1e1e1e;
     color: #fefefe;
-    background-image: url("/assets/background.png");
+    background-image: url("/assets/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -39,5 +41,10 @@ export const AppReset = createGlobalStyle`
 
   svg, img, video {
     display: block;
+  }
+
+  svg, img {
+    pointer-events: none;
+    user-select: none;
   }
 `;
