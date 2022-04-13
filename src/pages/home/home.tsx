@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     <HomeWrapper>
-      <HomeLogo src="/assets/home/logo.svg" alt="" />
+      <HomeLogo src="/assets/logo.svg" alt="" />
 
       <HomeMenu>
         {menu.map((item, index) => {

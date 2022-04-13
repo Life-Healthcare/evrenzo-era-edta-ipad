@@ -46,7 +46,7 @@ export default function Menu() {
           />
         </MenuItem>
 
-        <MenuItem onClick={() => navigate("/home")}>
+        <MenuItem onClick={() => navigate("/")}>
           <path
             d="m721.629 490.258h146.527l-50.966 127.415h-146.527z"
             fill="#004c2f"

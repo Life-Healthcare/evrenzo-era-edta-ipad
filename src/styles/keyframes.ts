@@ -11,3 +11,13 @@ export const fadeInAndUp = keyframes`
     transform: translateY(0%);
   }
 `;
+
+export const tap = keyframes`
+  0%, 100% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(0.8);
+  }
+`;
