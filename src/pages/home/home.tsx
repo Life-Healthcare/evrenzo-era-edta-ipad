@@ -38,7 +38,11 @@ export default function Home() {
       <HomeMenu>
         {menu.map((item, index) => {
           return (
-            <HomeMenuItem key={index} style={{ backgroundColor: item.color }}>
+            <HomeMenuItem
+              key={index}
+              style={{ backgroundColor: item.color }}
+              to={`/page/${index + 1}`}
+            >
               <img src={`/assets/home/menu/${index + 1}.svg`} alt="" />
             </HomeMenuItem>
           );
@@ -51,7 +55,7 @@ export default function Home() {
 
       <LegalNotice />
 
-      <Menu />
+      <Menu prev="/" next="/page/1" />
     </HomeWrapper>
   );
 }

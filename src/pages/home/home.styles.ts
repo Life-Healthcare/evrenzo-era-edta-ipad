@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 import { LegalNoticeWrapper } from "@/components/legal-notice/legal-notice.styles";
 import { fadeInAndUp, tap } from "@/styles/keyframes";
@@ -10,10 +11,11 @@ export const HomeNotice = styled.img`
 export const HomeIndicator = styled.img`
   margin-inline: auto;
   margin-top: 36px;
-  animation: ${tap} calc(var(--speed) * 2.5) var(--ease) infinite calc(var(--speed) * 5 * 0.5);
+  animation: ${tap} calc(var(--speed) * 2.5) var(--ease) infinite
+    calc(var(--speed) * 5 * 0.5);
 `;
 
-export const HomeMenuItem = styled.div`
+export const HomeMenuItem = styled(Link)`
   display: flex;
   align-items: flex-start;
   justify-content: center;

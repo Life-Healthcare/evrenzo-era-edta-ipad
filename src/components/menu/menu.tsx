@@ -1,14 +1,14 @@
 import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { MenuWrapper, MenuItem } from "@/components/menu/menu.styles";
 
-export default function Menu() {
-  const { pathname } = useLocation();
-  const navigate = useNavigate();
+type Props = {
+  prev?: string;
+  next?: string;
+};
 
-  const [prev, next] = React.useMemo(() => {
-    return ["/", "/"];
-  }, [pathname]);
+export default function Menu({ prev, next }: Props) {
+  const navigate = useNavigate();
 
   return (
     <MenuWrapper>
@@ -18,33 +18,40 @@ export default function Menu() {
         width="510.935"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <MenuItem onClick={() => navigate(prev)}>
-          <path
-            d="m721.629 490.258h146.527l-50.966 127.415h-146.527z"
-            fill="#004c2f"
-            transform="translate(-670.663 -490.258)"
-          />
-          <path
-            d="m45.869 22.935a22.935 22.935 0 1 1 -22.934-22.935 22.935 22.935 0 0 1 22.934 22.935zm-21.5-8.6a1.433 1.433 0 1 0 -2.867 0v13.74l-6.153-6.155a1.435 1.435 0 0 0 -2.03 2.03l8.6 8.6a1.433 1.433 0 0 0 2.03 0l8.6-8.6a1.435 1.435 0 1 0 -2.03-2.03l-6.152 6.155z"
-            fill="currentColor"
-            fillRule="evenodd"
-            transform="matrix(0 1 -1 0 122.319 40.771)"
-          />
-        </MenuItem>
+        {prev && (
+          <MenuItem
+            onClick={() => navigate(prev)}
+            transform={`translate(${next ? 0 : 156.721} ${0})`}
+          >
+            <path
+              d="m721.629 490.258h146.527l-50.966 127.415h-146.527z"
+              fill="#004c2f"
+              transform="translate(-670.663 -490.258)"
+            />
+            <path
+              d="m45.869 22.935a22.935 22.935 0 1 1 -22.934-22.935 22.935 22.935 0 0 1 22.934 22.935zm-21.5-8.6a1.433 1.433 0 1 0 -2.867 0v13.74l-6.153-6.155a1.435 1.435 0 0 0 -2.03 2.03l8.6 8.6a1.433 1.433 0 0 0 2.03 0l8.6-8.6a1.435 1.435 0 1 0 -2.03-2.03l-6.152 6.155z"
+              fill="currentColor"
+              fillRule="evenodd"
+              transform="matrix(0 1 -1 0 122.319 40.771)"
+            />
+          </MenuItem>
+        )}
 
-        <MenuItem onClick={() => navigate(next)}>
-          <path
-            d="m721.629 490.258h146.527l-50.966 127.415h-146.527z"
-            fill="#004c2f"
-            transform="translate(-513.942 -490.258)"
-          />
-          <path
-            d="m45.869 22.935a22.935 22.935 0 1 1 -22.934-22.935 22.935 22.935 0 0 1 22.934 22.935zm-21.5-8.6a1.433 1.433 0 1 0 -2.867 0v13.74l-6.153-6.155a1.435 1.435 0 0 0 -2.03 2.03l8.6 8.6a1.433 1.433 0 0 0 2.03 0l8.6-8.6a1.435 1.435 0 1 0 -2.03-2.03l-6.152 6.155z"
-            fill="currentColor"
-            fillRule="evenodd"
-            transform="matrix(0 -1 1 0 233.171 86.641)"
-          />
-        </MenuItem>
+        {next && (
+          <MenuItem onClick={() => navigate(next)}>
+            <path
+              d="m721.629 490.258h146.527l-50.966 127.415h-146.527z"
+              fill="#004c2f"
+              transform="translate(-513.942 -490.258)"
+            />
+            <path
+              d="m45.869 22.935a22.935 22.935 0 1 1 -22.934-22.935 22.935 22.935 0 0 1 22.934 22.935zm-21.5-8.6a1.433 1.433 0 1 0 -2.867 0v13.74l-6.153-6.155a1.435 1.435 0 0 0 -2.03 2.03l8.6 8.6a1.433 1.433 0 0 0 2.03 0l8.6-8.6a1.435 1.435 0 1 0 -2.03-2.03l-6.152 6.155z"
+              fill="currentColor"
+              fillRule="evenodd"
+              transform="matrix(0 -1 1 0 233.171 86.641)"
+            />
+          </MenuItem>
+        )}
 
         <MenuItem onClick={() => navigate("/")}>
           <path
