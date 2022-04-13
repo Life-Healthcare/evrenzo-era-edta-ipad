@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     <HomeWrapper>
-      <HomeLogo src="/assets/logo.svg" alt="" />
+      <HomeLogo src="./assets/logo.svg" alt="" />
 
       <HomeMenu>
         {menu.map((item, index) => {
@@ -43,15 +43,15 @@ export default function Home() {
               style={{ backgroundColor: item.color }}
               to={`/page/${index + 1}`}
             >
-              <img src={`/assets/home/menu/${index + 1}.svg`} alt="" />
+              <img src={`./assets/home/menu/${index + 1}.svg`} alt="" />
             </HomeMenuItem>
           );
         })}
       </HomeMenu>
 
-      <HomeIndicator src="/assets/home/indicator.svg" alt="" />
+      <HomeIndicator src="./assets/home/indicator.svg" alt="" />
 
-      <HomeNotice src="/assets/home/notice.svg" alt="" />
+      <HomeNotice src="./assets/home/notice.svg" alt="" />
 
       <LegalNotice />
 

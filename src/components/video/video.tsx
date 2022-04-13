@@ -26,7 +26,7 @@ export default function Video({ src }: Props) {
         }}
       />
       <VideoPlay ref={playRef}>
-        <img src="/assets/page/play.svg" alt="" />
+        <img src="./assets/page/play.svg" alt="" />
       </VideoPlay>
     </VideoWrapper>
   );

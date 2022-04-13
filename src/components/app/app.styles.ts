@@ -33,7 +33,7 @@ export const AppReset = createGlobalStyle`
     line-height: 1em;
     background-color: #1e1e1e;
     color: #fefefe;
-    background-image: url("/assets/background.jpg");
+    background-image: url("./assets/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;

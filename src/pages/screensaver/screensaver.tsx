@@ -16,27 +16,27 @@ export default function Screensaver() {
   return (
     <ScreensaverWrapper>
       <ScreensaverContainer>
-        <ScreensaverLogo src="/assets/logo.svg" alt="" />
+        <ScreensaverLogo src="./assets/logo.svg" alt="" />
 
-        <ScreensaverTitle src="/assets/screensaver/title.svg" alt="" />
+        <ScreensaverTitle src="./assets/screensaver/title.svg" alt="" />
 
         <ScreensaverIntroduction
-          src="/assets/screensaver/introduction.svg"
+          src="./assets/screensaver/introduction.svg"
           alt=""
         />
 
         <Link to="/home">
-          <ScreensaverStart src="/assets/screensaver/start.svg" alt="" />
+          <ScreensaverStart src="./assets/screensaver/start.svg" alt="" />
         </Link>
 
         <ScreensaverDisclaimer
-          src="/assets/screensaver/disclaimer.svg"
+          src="./assets/screensaver/disclaimer.svg"
           alt=""
         />
       </ScreensaverContainer>
 
       <ScreensaverInformation
-        src="/assets/screensaver/information.svg"
+        src="./assets/screensaver/information.svg"
         alt=""
       />
 

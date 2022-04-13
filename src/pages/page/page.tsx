@@ -13,12 +13,12 @@ export default function Page() {
     <PageWrapper>
       {id > 5 && <Redirect />}
       {[1, 2].includes(id) && (
-        <PageImage key={id} src={`/assets/page/${id}.svg`} alt="" />
+        <PageImage key={id} src={`./assets/page/${id}.svg`} alt="" />
       )}
       {[3, 4].includes(id) && (
         <React.Fragment key={id}>
-          <PageImage key={id} src={`/assets/page/${id}.svg`} alt="" />
-          <Video src={`/assets/page/${id}.mp4`} />
+          <PageImage key={id} src={`./assets/page/${id}.svg`} alt="" />
+          <Video src={`./assets/page/${id}.mp4`} />
         </React.Fragment>
       )}
       <Menu
