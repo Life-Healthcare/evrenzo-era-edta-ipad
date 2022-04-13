@@ -11,4 +11,8 @@ export const MenuWrapper = styled.div`
   display: flex;
   align-items: center;
   width: max-content;
+
+  svg {
+    pointer-events: auto;
+  }
 `;
