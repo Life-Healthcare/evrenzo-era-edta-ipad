@@ -13,5 +13,21 @@ export const PageWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 127px;
+  padding-bottom: calc(127px * var(--scale-y));
+
+  &.id-1 ${PageImage} {
+    width: calc(1403px * var(--scale-x));
+  }
+
+  &.id-2 ${PageImage} {
+    width: calc(1162px * var(--scale-x));
+  }
+
+  &.id-3 ${PageImage} {
+    width: calc(573px * var(--scale-x));
+  }
+
+  &.id-4 ${PageImage} {
+    width: calc(364.1px * var(--scale-x));
+  }
 `;

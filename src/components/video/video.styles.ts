@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const VideoPlay = styled.div`
-  --size: 138px;
+  --size: calc(138px * var(--scale-x));
   position: absolute;
   top: 50%;
   left: 50%;
@@ -19,7 +19,7 @@ export const VideoVideo = styled.video`
 
 export const VideoWrapper = styled.div`
   position: relative;
-  margin-top: 55px;
+  margin-top: calc(55px * var(--scale-y));
   width: 100%;
-  max-width: 1848px;
+  max-width: calc(1848px * var(--scale-x));
 `;

@@ -10,7 +10,7 @@ export default function Page() {
   const id = parseInt(params.id);
 
   return (
-    <PageWrapper>
+    <PageWrapper className={`id-${id}`}>
       {id > 5 && <Redirect />}
       {[1, 2].includes(id) && (
         <PageImage key={id} src={`./assets/page/${id}.svg`} alt="" />
