@@ -17,6 +17,26 @@ export default function App() {
     };
   }, []);
 
+  React.useEffect(() => {
+    function onResize() {
+      document.documentElement.style.setProperty(
+        "--device-width",
+        String(window.innerWidth)
+      );
+      document.documentElement.style.setProperty(
+        "--device-height",
+        String(window.innerHeight)
+      );
+    }
+
+    onResize();
+
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("resize", onResize);
+    };
+  }, []);
+
   return (
     <React.Suspense fallback="Loading...">
       <AppReset />

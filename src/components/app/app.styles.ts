@@ -1,12 +1,18 @@
 import { createGlobalStyle } from "styled-components";
 
 export const AppReset = createGlobalStyle`
+  @import url("./fonts.css");
+
   :root {
     --root-size: 20px;
     --speed: 400ms;
     --ease: ease;
-    --device-width: 2048;
-    --device-height: 1536;
+    --artwork-width: 2048;
+    --artwork-height: 1536;
+    --device-width: 1080;
+    --device-height: 790;
+    --scale-x: calc(var(--device-width) / var(--artwork-width));
+    --scale-y: calc(var(--device-height) / var(--artwork-height));
   }
 
   * {
@@ -28,7 +34,7 @@ export const AppReset = createGlobalStyle`
 
   html {
     font-size: var(--root-size);
-    font-family: Arial, sans-serif;
+    font-family: "Trade Gothic LT Std", Helvetica, Arial, sans-serif;
     font-weight: normal;
     line-height: 1em;
     background-color: #1e1e1e;
@@ -46,5 +52,6 @@ export const AppReset = createGlobalStyle`
   svg, img {
     pointer-events: none;
     user-select: none;
+    height: auto;
   }
 `;

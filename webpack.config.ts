@@ -7,12 +7,14 @@ import * as ReactRefreshWebpackPlugin from "@pmmmwh/react-refresh-webpack-plugin
 const HtmlInlineScriptPlugin = require("html-inline-script-webpack-plugin");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
+const WorkboxPlugin = require("workbox-webpack-plugin");
 
 const DEV_MODE = process.env.NODE_ENV === "development";
 const SRC_DIR = path.resolve(__dirname, "src");
 const PUBLIC_DIR = path.resolve(__dirname, "public");
 const BUILD_DIR = path.resolve(__dirname, "build");
 const PUBLIC_PATH = process.env.PUBLIC_PATH ?? "/";
+const SSL_MODE = process.env.SSL === "true";
 
 const config = {
   mode: DEV_MODE ? "development" : "production",
@@ -23,6 +25,7 @@ const config = {
   devServer: {
     historyApiFallback: true,
     hot: true,
+    https: SSL_MODE,
   },
   module: {
     rules: [
@@ -114,6 +117,15 @@ export default () => {
   if (!DEV_MODE) {
     config.plugins.push(
       new HtmlInlineScriptPlugin({ scriptMatchPattern: [/main.+[.]js$/] })
+    );
+    config.plugins.push(
+      new WorkboxPlugin.GenerateSW({
+        // these options encourage the ServiceWorkers to get in there fast
+        // and not allow any straggling "old" SWs to hang around
+        clientsClaim: true,
+        skipWaiting: true,
+        maximumFileSizeToCacheInBytes: 1000000 * 50,
+      })
     );
   }
   return config;

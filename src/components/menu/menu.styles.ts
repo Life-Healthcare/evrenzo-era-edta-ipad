@@ -14,5 +14,6 @@ export const MenuWrapper = styled.div`
 
   svg {
     pointer-events: auto;
+    width: calc(511px * var(--scale-x));
   }
 `;
