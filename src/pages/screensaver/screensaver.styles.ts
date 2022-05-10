@@ -8,13 +8,13 @@ export const ScreensaverIntroduction = styled.img`
 
 export const ScreensaverTitle = styled.img`
   margin-inline: auto;
-  margin-top: calc(286px * var(--scale-y));
+  margin-top: calc(158px * var(--scale-y));
   width: calc(1519px * var(--scale-x));
 `;
 
 export const ScreensaverDisclaimer = styled.img`
   margin-inline: auto;
-  margin-top: calc(34px * var(--scale-y));
+  margin-top: calc(264px * var(--scale-y));
   width: calc(529px * var(--scale-x));
 `;
 

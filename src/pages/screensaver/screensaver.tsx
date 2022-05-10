@@ -24,15 +24,13 @@ export default function Screensaver() {
           src="./assets/screensaver/introduction.svg"
           alt=""
         />
-
-        <Link to="/home">
-          <ScreensaverStart src="./assets/screensaver/start.svg" alt="" />
-        </Link>
-
         <ScreensaverDisclaimer
           src="./assets/screensaver/disclaimer.svg"
           alt=""
         />
+        <Link to="/home">
+          <ScreensaverStart src="./assets/screensaver/start.svg" alt="" />
+        </Link>
       </ScreensaverContainer>
 
       <ScreensaverInformation

@@ -31,6 +31,32 @@ export default function LegalNotice() {
           </g>
         </g>
       </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="624"
+        height="81"
+        viewBox="0 0 624 81"
+      >
+        <text
+          id="EVZ_2022_0057_ABC_Date_of_preparation:_May_2022_Date_of_expiry:_June_2022"
+          data-name="EVZ_2022_0057_ABC
+Date of preparation: May 2022
+Date of expiry: June 2022"
+          fill="#fff"
+          fontSize="23"
+          fontFamily="TradeGothicLTStd-Bd2, Trade Gothic LT Std"
+        >
+          <tspan x="0" y="17">
+            EVZ_2022_0057_ABC
+          </tspan>
+          <tspan x="0" y="46">
+            Date of preparation: May 2022
+          </tspan>
+          <tspan x="0" y="75">
+            Date of expiry: June 2022
+          </tspan>
+        </text>
+      </svg>
     </LegalNoticeWrapper>
   );
 }
