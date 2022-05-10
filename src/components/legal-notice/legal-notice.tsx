@@ -1,9 +1,13 @@
 import React from "react";
 import { LegalNoticeWrapper } from "@/components/legal-notice/legal-notice.styles";
 
-export default function LegalNotice() {
+type Props = {
+  showSecondLegalNotice?: boolean;
+};
+
+export default function LegalNotice({ showSecondLegalNotice = false }: Props) {
   return (
-    <LegalNoticeWrapper>
+    <LegalNoticeWrapper showSecondLegalNotice={showSecondLegalNotice}>
       <svg
         width="551.2"
         height="93.1"
@@ -31,7 +35,7 @@ export default function LegalNotice() {
           </g>
         </g>
       </svg>
-      <svg
+      {showSecondLegalNotice && <svg
         xmlns="http://www.w3.org/2000/svg"
         width="624"
         height="81"
@@ -56,7 +60,7 @@ Date of expiry: June 2022"
             Date of expiry: June 2022
           </tspan>
         </text>
-      </svg>
+      </svg>}
     </LegalNoticeWrapper>
   );
 }

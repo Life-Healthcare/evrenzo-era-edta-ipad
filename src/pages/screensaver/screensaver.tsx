@@ -38,7 +38,7 @@ export default function Screensaver() {
         alt=""
       />
 
-      <LegalNotice />
+      <LegalNotice showSecondLegalNotice/>
     </ScreensaverWrapper>
   );
 }
