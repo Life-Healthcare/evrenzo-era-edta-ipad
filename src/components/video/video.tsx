@@ -7,15 +7,17 @@ import {
 
 type Props = {
   src: string;
+  poster: string;
 };
 
-export default function Video({ src }: Props) {
+export default function Video({ src, poster }: Props) {
   const playRef = React.useRef<HTMLDivElement>(null);
 
   return (
     <VideoWrapper>
       <VideoVideo
         src={src}
+        poster={poster}
         playsInline
         controls
         onPlay={() => {

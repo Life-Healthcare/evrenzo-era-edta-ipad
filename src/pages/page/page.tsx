@@ -15,10 +15,18 @@ export default function Page() {
       {[1, 2].includes(id) && (
         <PageImage key={id} src={`./assets/page/${id}.svg`} alt="" />
       )}
-      {[3, 4].includes(id) && (
+      {[3, 5].includes(id) && (
         <React.Fragment key={id}>
           <PageImage key={id} src={`./assets/page/${id}.svg`} alt="" />
-          <Video src={`./assets/page/${id}.mp4`} />
+          <Video
+            src={`./assets/page/${id}.mp4`}
+            poster={`./assets/page/${id}.png`}
+          />
+        </React.Fragment>
+      )}
+      {[4].includes(id) && (
+        <React.Fragment key={id}>
+          <PageImage key={id} src={`./assets/page/${id}.svg`} alt="" />
         </React.Fragment>
       )}
       <Menu

@@ -29,5 +29,11 @@ export const PageWrapper = styled.div`
 
   &.id-4 ${PageImage} {
     width: calc(1272.84px * var(--scale-x));
+    position: absolute;
+    top: 4rem;
+  }
+
+  &.id-5 ${PageImage} {
+    width: calc(534.45px * var(--scale-x));
   }
 `;

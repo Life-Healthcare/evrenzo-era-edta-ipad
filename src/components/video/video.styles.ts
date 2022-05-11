@@ -9,6 +9,11 @@ export const VideoPlay = styled.div`
   width: var(--size);
   height: var(--size);
   pointer-events: none;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 export const VideoVideo = styled.video`
