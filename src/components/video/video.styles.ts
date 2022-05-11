@@ -20,6 +20,7 @@ export const VideoVideo = styled.video`
   display: block;
   width: 100%;
   cursor: pointer;
+  aspect-ratio: 16 / 9;
 `;
 
 export const VideoWrapper = styled.div`

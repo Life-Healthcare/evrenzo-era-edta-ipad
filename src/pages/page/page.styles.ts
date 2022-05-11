@@ -24,7 +24,7 @@ export const PageWrapper = styled.div`
   }
 
   &.id-3 ${PageImage} {
-    width: calc(810.81px * var(--scale-x));
+    width: calc(825.81px * var(--scale-x));
   }
 
   &.id-4 ${PageImage} {
