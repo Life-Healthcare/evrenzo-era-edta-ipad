@@ -26,7 +26,7 @@ export default function Home() {
         color: "#4EC3E0",
       },
       {
-        color: "#40146E",
+        color: "#007A33",
       },
     ];
   }, []);
