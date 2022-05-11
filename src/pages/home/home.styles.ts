@@ -20,30 +20,13 @@ export const HomeIndicator = styled.img`
 export const HomeMenuItem = styled(Link)`
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: left;
   padding-top: calc(108px * var(--scale-y));
   height: calc(530px * var(--scale-y));
   clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%);
   animation: ${fadeInAndUp} var(--speed) ease-out forwards;
   opacity: 0;
-
-  img {
-    :nth-child(1) {
-      width: calc(309px * var(--scale-x));
-    }
-    :nth-child(2) {
-      width: calc(273px * var(--scale-x));
-    }
-    :nth-child(3) {
-      width: calc(278px * var(--scale-x));
-    }
-    :nth-child(4) {
-      width: calc(326px * var(--scale-x));
-    }
-    :nth-child(5) {
-      width: calc(279px * var(--scale-x));
-    }
-  }
+  padding-left: calc(24px * var(--scale-x));
 `;
 
 export const HomeMenu = styled.div`
@@ -64,6 +47,34 @@ export const HomeMenu = styled.div`
       `;
     });
   }}
+
+  a {
+    :nth-child(1) {
+      img {
+        width: calc(279.12px * var(--scale-x));
+      }
+    }
+    :nth-child(2) {
+      img {
+        width: calc(250.84px * var(--scale-x));
+      }
+    }
+    :nth-child(3) {
+      img {
+        width: calc(270.15px * var(--scale-x));
+      }
+    }
+    :nth-child(4) {
+      img {
+        width: calc(317.28px * var(--scale-x));
+      }
+    }
+    :nth-child(5) {
+      img {
+        width: calc(255.64px * var(--scale-x));
+      }
+    }
+  }
 `;
 
 export const HomeLogo = styled.img`
