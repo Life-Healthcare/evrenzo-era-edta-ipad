@@ -1,9 +1,10 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { PageWrapper, PageImage } from "@/pages/page/page.styles";
+import { PageWrapper, PageImage, PdfContainer } from "@/pages/page/page.styles";
 import Redirect from "@/pages/page/redirect";
 import Menu from "@/components/menu/menu";
 import Video from "@/components/video/video";
+import Pdf from "@/components/pdf/pdf";
 
 export default function Page() {
   const params = useParams();
@@ -27,6 +28,9 @@ export default function Page() {
       {[4].includes(id) && (
         <React.Fragment key={id}>
           <PageImage key={id} src={`./assets/page/${id}.svg`} alt="" />
+          <PdfContainer>
+            <Pdf />
+          </PdfContainer>
         </React.Fragment>
       )}
       <Menu

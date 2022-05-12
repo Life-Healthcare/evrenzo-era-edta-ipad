@@ -37,3 +37,12 @@ export const PageWrapper = styled.div`
     width: calc(534.45px * var(--scale-x));
   }
 `;
+
+export const PdfContainer = styled.div`
+  position: relative;
+  margin-top: calc(160px * var(--scale-y));
+  width: auto;
+  max-width: calc(1848px * var(--scale-x));
+  height: calc(100% - 9em);
+  overflow: auto;
+`;
