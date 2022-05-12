@@ -9,36 +9,56 @@ import {
   ScreensaverIntroduction,
   ScreensaverDisclaimer,
   ScreensaverStart,
+  Card,
 } from "@/pages/screensaver/screensaver.styles";
 import LegalNotice from "@/components/legal-notice/legal-notice";
+import { Modal } from "@/components/modal/modal";
+import LegalPdf from "@/pdf/pdf";
 
 export default function Screensaver() {
+  const [pdfIsShown, setPdfIsShown] = React.useState(false);
+  const showCartHandler = () => {
+    setPdfIsShown(true);
+  };
+
+  const hideCartHandler = () => {
+    setPdfIsShown(false);
+  };
   return (
-    <ScreensaverWrapper>
-      <ScreensaverContainer>
-        <ScreensaverLogo src="./assets/logo.svg" alt="" />
+    <>
+      {pdfIsShown && (
+        <Modal onClose={() => hideCartHandler()}>
+          <Card>
+            <LegalPdf prefix="./assets/legal-pdf" pages={53} />
+            <button onClick={() => hideCartHandler()}>X</button>
+          </Card>
+        </Modal>
+      )}
+      <ScreensaverWrapper>
+        <ScreensaverContainer>
+          <ScreensaverLogo src="./assets/logo.svg" alt="" />
 
-        <ScreensaverTitle src="./assets/screensaver/title.svg" alt="" />
+          <ScreensaverTitle src="./assets/screensaver/title.svg" alt="" />
 
-        <ScreensaverIntroduction
-          src="./assets/screensaver/introduction.svg"
-          alt=""
-        />
-        <ScreensaverDisclaimer
-          src="./assets/screensaver/disclaimer.svg"
-          alt=""
-        />
-        <Link to="/home">
-          <ScreensaverStart src="./assets/screensaver/start.svg" alt="" />
-        </Link>
-      </ScreensaverContainer>
+          <ScreensaverIntroduction
+            src="./assets/screensaver/introduction.svg"
+            alt=""
+          />
+          <ScreensaverDisclaimer
+            src="./assets/screensaver/disclaimer.svg"
+            alt=""
+          />
+          <Link to="/home">
+            <ScreensaverStart src="./assets/screensaver/start.svg" alt="" />
+          </Link>
+        </ScreensaverContainer>
 
-      <ScreensaverInformation
-        src="./assets/screensaver/information.svg"
-        alt=""
-      />
+        <ScreensaverInformation onClick={showCartHandler}>
+          <img src="./assets/screensaver/information.svg" alt="" />
+        </ScreensaverInformation>
 
-      <LegalNotice showSecondLegalNotice/>
-    </ScreensaverWrapper>
+        <LegalNotice showSecondLegalNotice />
+      </ScreensaverWrapper>
+    </>
   );
 }
