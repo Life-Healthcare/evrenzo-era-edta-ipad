@@ -22,6 +22,7 @@ export const ScreensaverStart = styled.img`
   margin-inline: auto;
   margin-top: calc(34px * var(--scale-y));
   width: calc(578px * var(--scale-x));
+  pointer-events: auto;
 `;
 
 export const ScreensaverLogo = styled.img`
