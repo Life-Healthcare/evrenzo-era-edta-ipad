@@ -16,7 +16,7 @@ export default function Pdf() {
         return (
           <img
             key={page}
-            src={`${prefix}/${page}.jpg`}
+            src={`${prefix}/${page}.png`}
             style={{ display: "block", width: "100%" }}
             loading="lazy"
           />
