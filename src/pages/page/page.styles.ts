@@ -29,8 +29,6 @@ export const PageWrapper = styled.div`
 
   &.id-4 ${PageImage} {
     width: calc(1272.84px * var(--scale-x));
-    position: absolute;
-    top: 4rem;
   }
 
   &.id-5 ${PageImage} {
@@ -40,9 +38,9 @@ export const PageWrapper = styled.div`
 
 export const PdfContainer = styled.div`
   position: relative;
-  margin-top: calc(160px * var(--scale-y));
+  margin-top: calc(55px * var(--scale-y));
   width: auto;
   max-width: calc(1848px * var(--scale-x));
-  height: calc(100% - 9em);
+  height: calc(100% - 8em);
   overflow: auto;
 `;
