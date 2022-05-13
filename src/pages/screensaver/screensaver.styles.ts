@@ -76,7 +76,6 @@ export const Card = styled.div`
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
-    overflow: hidden;
     outline: none;
     position: absolute;
     top: calc(40px * var(--scale-y)); // 2rem;
