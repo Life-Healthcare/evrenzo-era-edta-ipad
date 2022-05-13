@@ -32,7 +32,7 @@ export const PageWrapper = styled.div`
   }
 
   &.id-5 ${PageImage} {
-    width: calc(534.45px * var(--scale-x));
+    width: calc(588.72px * var(--scale-x));
   }
 `;
 

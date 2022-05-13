@@ -24,5 +24,6 @@ export const LegalNoticeWrapper = styled.div<{
 
   & svg:nth-child(2) {
     margin-top: calc(20px * var(--scale-y));
+	width: calc(311.05px * var(--scale-x));
   }
 `;
