@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate, useLocation } from "react-router-dom";
 import { AppReset } from "@/components/app/app.styles";
 import Screensaver from "@/pages/screensaver/screensaver";
 import Home from "@/pages/home/home";
@@ -48,6 +48,35 @@ export default function App() {
     })();
     return () => clearTimeout(timeout);
   }, []);
+
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+
+  // Reset to screensaver when idle
+  React.useEffect(() => {
+    let timeout: NodeJS.Timeout;
+
+    function onInteraction() {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        if (pathname !== "/") {
+          navigate("/");
+        }
+      }, 120000);
+    }
+
+    onInteraction();
+
+    window.addEventListener("touchstart", onInteraction);
+    window.addEventListener("mousedown", onInteraction);
+    window.addEventListener("pointerdown", onInteraction);
+    return () => {
+      window.removeEventListener("touchstart", onInteraction);
+      window.removeEventListener("mousedown", onInteraction);
+      window.removeEventListener("pointerdown", onInteraction);
+      clearTimeout(timeout);
+    };
+  }, [navigate, pathname]);
 
   return (
     <React.Suspense fallback="Loading...">
