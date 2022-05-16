@@ -16,9 +16,19 @@ type SessionData = {
 };
 
 class SessionManager {
-  private serverEndpoint = "http://localhost:3000/api/sessions";
+  private serverEndpoint = "http://localhost:3000/api/save-sessions";
 
-  private cacheKey = "sessions";
+  private cacheKeyPrefix = "evrenzo-era-edta-ipad";
+
+  private projectId = "evrenzo-era-edta-ipad";
+
+  private readonly deviceId;
+
+  constructor() {
+    const key = `${this.cacheKeyPrefix}.deviceId`;
+    this.deviceId = localStorage.getItem(key) ?? this.uuid();
+    localStorage.setItem(key, this.deviceId);
+  }
 
   private currentSession: SessionData = null;
 
@@ -31,13 +41,20 @@ class SessionManager {
   }
 
   private save(session: SessionData) {
-    const sessions = JSON.parse(localStorage.getItem(this.cacheKey) ?? "[]");
+    const sessions = JSON.parse(
+      localStorage.getItem(`${this.cacheKeyPrefix}.sessions`) ?? "[]"
+    );
     sessions.push(session);
-    localStorage.setItem(this.cacheKey, JSON.stringify(sessions));
+    localStorage.setItem(
+      `${this.cacheKeyPrefix}.sessions`,
+      JSON.stringify(sessions)
+    );
   }
 
   private getSaved(): SessionData[] {
-    return JSON.parse(localStorage.getItem(this.cacheKey) ?? "[]");
+    return JSON.parse(
+      localStorage.getItem(`${this.cacheKeyPrefix}.sessions`) ?? "[]"
+    );
   }
 
   private uuid() {
@@ -50,10 +67,12 @@ class SessionManager {
 
   async sendToServer() {
     // Update server sending state
-    const sessions = this.getSaved().map((session) => {
-      session.sendingToServer = true;
-      return session;
-    });
+    const sessions = this.getSaved()
+      .filter((session) => !session.sendingToServer && !session.sentToServer)
+      .map((session) => {
+        session.sendingToServer = true;
+        return session;
+      });
     let sentToServer = false;
     try {
       const res = await fetch(this.serverEndpoint, {
@@ -61,7 +80,11 @@ class SessionManager {
           "Content-Type": "application/json",
         },
         method: "POST",
-        body: JSON.stringify(sessions),
+        body: JSON.stringify({
+          deviceId: this.deviceId,
+          projectId: this.projectId,
+          sessions,
+        }),
       });
       sentToServer = res.ok;
     } catch (err) {
@@ -76,7 +99,10 @@ class SessionManager {
         }
         return session;
       });
-      localStorage.setItem(this.cacheKey, JSON.stringify(updatedSessions));
+      localStorage.setItem(
+        `${this.cacheKeyPrefix}.sessions`,
+        JSON.stringify(updatedSessions)
+      );
     }
   }
 
@@ -122,6 +148,7 @@ class SessionManager {
     }
 
     // Format session dates and add duration
+    this.currentSession.end = new Date();
     const start = this.currentSession.start as Date;
     const end = this.currentSession.end as Date;
     this.currentSession.start = SessionManager.getTimestamp(start);
