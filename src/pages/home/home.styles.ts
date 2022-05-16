@@ -66,7 +66,7 @@ export const HomeMenu = styled.div`
     }
     :nth-child(4) {
       img {
-        width: calc(317.28px * var(--scale-x));
+        width: calc(316.28px * var(--scale-x));
       }
     }
     :nth-child(5) {
