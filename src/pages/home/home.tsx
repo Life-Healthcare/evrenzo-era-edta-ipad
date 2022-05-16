@@ -9,6 +9,7 @@ import {
 } from "@/pages/home/home.styles";
 import Menu from "@/components/menu/menu";
 import LegalNotice from "@/components/legal-notice/legal-notice";
+import sessionManager from "@/services/session-manager";
 
 export default function Home() {
   const menu = React.useMemo(() => {
@@ -29,6 +30,11 @@ export default function Home() {
         color: "#007A33",
       },
     ];
+  }, []);
+
+  React.useEffect(() => {
+    sessionManager.start();
+    sessionManager.page("home");
   }, []);
 
   return (

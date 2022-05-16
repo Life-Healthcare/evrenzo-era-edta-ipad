@@ -14,6 +14,7 @@ import {
 import LegalNotice from "@/components/legal-notice/legal-notice";
 import { Modal } from "@/components/modal/modal";
 import LegalPdf from "@/pdf/pdf";
+import sessionManager from "@/services/session-manager";
 
 export default function Screensaver() {
   const [pdfIsShown, setPdfIsShown] = React.useState(false);
@@ -24,6 +25,11 @@ export default function Screensaver() {
   const hideCartHandler = () => {
     setPdfIsShown(false);
   };
+
+  React.useEffect(() => {
+    sessionManager.end();
+  }, []);
+
   return (
     <>
       {pdfIsShown && (

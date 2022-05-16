@@ -4,6 +4,7 @@ import { AppReset } from "@/components/app/app.styles";
 import Screensaver from "@/pages/screensaver/screensaver";
 import Home from "@/pages/home/home";
 import Page from "@/pages/page/page";
+import sessionManager from "@/services/session-manager";
 
 export default function App() {
   React.useEffect(() => {
@@ -35,6 +36,17 @@ export default function App() {
     return () => {
       window.removeEventListener("resize", onResize);
     };
+  }, []);
+
+  React.useEffect(() => {
+    let timeout: NodeJS.Timeout;
+    // Send sessions to server every 1 minute
+    (async function sendToServer() {
+      await sessionManager.sendToServer();
+      clearTimeout(timeout);
+      timeout = setTimeout(sessionManager.sendToServer, 60000);
+    })();
+    return () => clearTimeout(timeout);
   }, []);
 
   return (

@@ -5,10 +5,16 @@ import Redirect from "@/pages/page/redirect";
 import Menu from "@/components/menu/menu";
 import Video from "@/components/video/video";
 import Pdf from "@/pdf/pdf";
+import sessionManager from "@/services/session-manager";
 
 export default function Page() {
   const params = useParams();
   const id = parseInt(params.id);
+
+  React.useEffect(() => {
+    if (id > 5) return;
+    sessionManager.page(`page-${id}`);
+  }, [id]);
 
   return (
     <PageWrapper className={`id-${id}`}>
@@ -29,7 +35,7 @@ export default function Page() {
         <React.Fragment key={id}>
           <PageImage key={id} src={`./assets/page/${id}.svg`} alt="" />
           <PdfContainer>
-            <Pdf prefix="./assets/pdf" pages={4} extention="png"/>
+            <Pdf prefix="./assets/pdf" pages={4} extention="png" />
           </PdfContainer>
         </React.Fragment>
       )}
