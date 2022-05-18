@@ -4,6 +4,7 @@ import {
   VideoVideo,
   VideoPlay,
 } from "@/components/video/video.styles";
+import emitter from "@/services/emitter";
 
 type Props = {
   src: string;
@@ -20,6 +21,7 @@ export default function Video({ src, poster }: Props) {
         poster={poster}
         playsInline
         controls
+        onTimeUpdate={() => emitter.emit("interaction")}
         onPlay={() => {
           const play = playRef.current;
           if (play !== null) {

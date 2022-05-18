@@ -1,10 +1,11 @@
 import React from "react";
-import { Route, Routes, useNavigate, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import { AppReset } from "@/components/app/app.styles";
 import Screensaver from "@/pages/screensaver/screensaver";
 import Home from "@/pages/home/home";
 import Page from "@/pages/page/page";
 import sessionManager from "@/services/session-manager";
+import emitter from "@/services/emitter";
 
 export default function App() {
   React.useEffect(() => {
@@ -67,10 +68,12 @@ export default function App() {
 
     onInteraction();
 
+    emitter.on("interaction", onInteraction);
     window.addEventListener("touchstart", onInteraction);
     window.addEventListener("mousedown", onInteraction);
     window.addEventListener("pointerdown", onInteraction);
     return () => {
+      emitter.off("interaction", onInteraction);
       window.removeEventListener("touchstart", onInteraction);
       window.removeEventListener("mousedown", onInteraction);
       window.removeEventListener("pointerdown", onInteraction);
