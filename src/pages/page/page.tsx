@@ -26,7 +26,7 @@ export default function Page() {
         <PageImage key={id} src={`./assets/page/${id}.svg`} alt="" />
       )}
       <Menu
-        prev={id === 1 ? "/home" : `/page/${id - 1}`}
+        prev={id === 1 ? undefined : `/page/${id - 1}`}
         next={id === 8 ? undefined : `/page/${id + 1}`}
       />
     </PageWrapper>
