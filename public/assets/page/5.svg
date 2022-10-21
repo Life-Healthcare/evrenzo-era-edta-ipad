@@ -1,1 +1,158 @@
-<?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 588.72 58.9"><g id="b" transform="translate(0 2)" isolation="isolate"><g isolation="isolate"><path d="M38.38,7.1v6.34H11.86v8.79h22.83v6.34H11.86v9.98h27.15v6.34H4.47V7.1H38.38Z" fill="#007a33"/><path d="M49.24,7.1l14.2,30.16,14.46-30.16h7.9l-18.51,37.81h-7.7L41.34,7.1h7.9Z" fill="#007a33"/><path d="M114.25,7.1c10.71,0,15.03,3.54,15.03,11.28,0,6.34-4.26,10.71-10.56,11.13l11.6,15.39h-9.1l-10.97-14.87h-11.7v14.87h-7.38V7.1h23.09Zm-1.09,16.8c6.76,0,8.74-1.51,8.74-5.36s-2.13-5.3-8.74-5.3h-14.61v10.66h14.61Z" fill="#007a33"/><path d="M171.29,7.1v6.34h-26.52v8.79h22.83v6.34h-22.83v9.98h27.15v6.34h-34.53V7.1h33.91Z" fill="#007a33"/><path d="M185.64,7.1l25.27,27.3V7.1h7.07V44.9h-6.76l-26.31-28.29v28.29h-7.07V7.1h7.8Z" fill="#007a33"/><path d="M261.04,7.1v4.16l-25.69,27.3h26.31v6.34h-37.96v-3.64l26.42-27.82h-25.07V7.1h35.99Z" fill="#007a33"/><path d="M309.97,26.28c0,11.03-7.64,19.55-22.52,19.55s-22.52-8.53-22.52-19.55c0-12.38,7.96-20.12,22.52-20.12s22.52,7.8,22.52,20.12Zm-22.57-13.78c-9.2,0-15.08,4.89-15.08,13.36s5.72,13.62,15.13,13.62,15.13-4.68,15.13-13.62c0-8.42-5.77-13.36-15.18-13.36Z" fill="#007a33"/></g><g isolation="isolate"><path d="M335.14,5.52v3.7h-9.86V27.57h-4.31V9.22h-9.86v-3.7h24.03Z" fill="#007a33"/><path d="M344.02,5.52l6.89,16.35,7.01-16.35h5.67V27.57h-3.82V10.86h-.06l-7.07,16.71h-3.43l-7.1-16.71h-.06V27.57h-3.82V5.52h5.79Z" fill="#007a33"/></g><g isolation="isolate"><path d="M395.5,7.16v5.72h-6.45V7.16h6.45Zm0,10.82v27.92h-6.45V17.98h6.45Z" fill="#007a33"/><path d="M430.7,27.75v18.15h-6.45v-15.76c0-5.2-1.66-7.59-6.03-7.59-3.74,0-6.4,1.04-8.79,4.11v19.24h-6.45V17.98h6.34v3.48c3.28-3.28,6.29-4.42,10.45-4.42,7.33,0,10.92,3.95,10.92,10.71Z" fill="#007a33"/><path d="M463.15,8.1v12.79c4.47-3.43,7.7-3.85,10.71-3.85,9.05,0,14.98,6.14,14.98,14.72,0,9.15-6.5,15.08-14.72,15.08-4.52,0-8.22-1.56-11.08-4.52v3.59h-6.34V8.1h6.45Zm0,29.17c3.69,3.07,6.34,4.06,9.52,4.06,5.51,0,9.62-3.64,9.62-9.36s-4.26-9.41-9.88-9.41c-3.28,0-6.14,1.14-9.26,3.85v10.87Z" fill="#007a33"/><path d="M512.65,17.14v6.97c-1.82-.47-2.34-.52-3.85-.52-5.51,0-8.37,2.44-8.37,7.33v14.98h-6.45V17.98h6.45v4.16h.16c2.13-3.38,5.46-5.1,9.93-5.1,1.51,0,1.77,0,2.13,.1Z" fill="#007a33"/><path d="M524.04,7.16v5.72h-6.45V7.16h6.45Zm0,10.82v27.92h-6.45V17.98h6.45Z" fill="#007a33"/><path d="M560.91,33.73h-24.49c.62,5.2,4.47,7.9,9.31,7.9,3.33,0,6.45-1.51,7.59-4.11h7.07c-1.51,5.25-7.02,9.31-14.56,9.31-9.78,0-15.96-6.03-15.96-14.98s6.03-14.82,15.39-14.82,15.6,5.56,15.65,16.69Zm-6.86-4.99c-.94-4.32-3.74-6.5-8.84-6.5-4.73,0-7.59,2.34-8.58,6.5h17.42Z" fill="#007a33"/><path d="M587.79,7.99v5.51c-2.86-.68-4.63-.83-6.24-.83-3.85,0-5.25,1.51-5.25,4.63v1.61h10.04v5.51h-10.04v21.48h-6.45V24.42h-6.19v-5.51h6.19v-3.43c0-4.58,2.65-8.32,11.02-8.32,1.61,0,2.5,.05,6.92,.83Z" fill="#007a33"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1877 1401.7" style="enable-background:new 0 0 1877 1401.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4D4D4F;}
+	.st1{font-family:'TradeGothicLTStd';}
+	.st2{font-size:23px;}
+	.st3{font-size:13.416px;}
+	.st4{fill:#007A33;}
+	.st5{font-family:'TradeGothicLTStd-Bold';}
+	.st6{font-size:52px;}
+	.st7{font-size:30.332px;}
+	.st8{font-family:'TradeGothicLTStd-Bd2';}
+	.st9{font-size:32px;}
+	.st10{font-size:18.666px;}
+	.st11{opacity:0.831;}
+	.st12{fill:#FFFFFF;}
+	.st13{fill:none;stroke:#BBBCBC;}
+	.st14{fill:none;stroke:#FFFFFF;}
+	.st15{font-size:30px;}
+	.st16{font-size:31px;}
+	.st17{font-size:25px;}
+	.st18{font-size:18.082px;}
+</style>
+<g>
+	<text transform="matrix(1 0 0 1 1424 647)" class="st0 st1 st2">CKD, chronic kidney disease; DD,</text>
+	<text transform="matrix(1 0 0 1 1424 681)" class="st0 st1 st2">dialysis-dependent; ESA,</text>
+	<text transform="matrix(1 0 0 1 1424 715)" class="st0 st1 st2">erythropoiesis-stimulating agent;</text>
+	<text transform="matrix(1 0 0 1 1424 749)" class="st0 st1 st2">MedDRA, Medical Dictionary tor</text>
+	<text transform="matrix(1 0 0 1 1424 783)" class="st0 st1 st2">Regulatory Activities; NDD,</text>
+	<text transform="matrix(1 0 0 1 1424 817)" class="st0 st1 st2">non-dialysis-dependent</text>
+	<text transform="matrix(1 0 0 1 1424 447)" class="st0 st1 st2">*Associated with CKD patients who were</text>
+	<text transform="matrix(1 0 0 1 1424 481)" class="st0 st1 st2">on dialysis while receiving EVRENZO.</text>
+	<text transform="matrix(1 0 0 1 1424 539.3341)" class="st0 st1 st3">†</text>
+	<text transform="matrix(1 0 0 1 1430.708 547)" class="st0 st1 st2">Based on global post-marketing</text>
+	<text transform="matrix(1 0 0 1 1424 581)" class="st0 st1 st2">experience.</text>
+	<text transform="matrix(1 0 0 1 1424 883)" class="st0 st1 st2">1. EVRENZO EU SmPC, September 2022.</text>
+</g>
+<text transform="matrix(1 0 0 1 0 117)" class="st4 st5 st6">The safety profile of EVRENZO was</text>
+<text transform="matrix(1 0 0 1 0 171)" class="st4 st5 st6">evaluated in over 6,800 patients</text>
+<text transform="matrix(1 0 0 1 699.2411 153.6684)" class="st4 st5 st7">1</text>
+<text transform="matrix(1 0 0 1 0 346)" class="st0 st8 st9">Adverse reactions observed during clinical studies</text>
+<text transform="matrix(1 0 0 1 695.9297 335.3344)" class="st0 st8 st10">1</text>
+<text transform="matrix(1 0 0 1 0 390)" class="st0 st1 st9">(very common ≥1/10; common ≥1/100 to &lt;1/10; uncommon ≥1/1,000 to &lt;1/100)</text>
+<g transform="translate(0 430)">
+	<path class="st4" d="M0,0h1359.6v75.8H0V0z"/>
+	<g class="st11">
+		<path class="st12" d="M0,74.2h1359.6v75.8H0V74.2z"/>
+		<path class="st13" d="M0.5,74.7h1358.6v74.8H0.5V74.7z"/>
+	</g>
+	<g class="st11">
+		<path class="st12" d="M0,148.4h1359.6v75.8H0V148.4z"/>
+		<path class="st13" d="M0.5,148.9h1358.6v74.8H0.5V148.9z"/>
+	</g>
+	<path class="st13" d="M610.8,74.2v150.2"/>
+	<path class="st14" d="M611.3,0.3v74.2"/>
+	<text transform="matrix(1 0 0 1 17.973 120.24)" class="st0 st1 st15">Infections and infestations</text>
+	<text transform="matrix(1 0 0 1 17.973 193.654)" class="st0 st1 st15">Metabolism and nutrition disorders </text>
+	<path class="st13" d="M933.3,74.2v150.2"/>
+	<text transform="matrix(1 0 0 1 653.568 120.24)" class="st0 st1 st15">Common</text>
+	<text transform="matrix(1 0 0 1 652.168 194.474)" class="st0 st1 st16">Very common</text>
+	<text transform="matrix(1 0 0 1 652.168 45.143)" class="st12 st8 st16">Frequency</text>
+	<text transform="matrix(1 0 0 1 17.973 45.323)" class="st12 st8 st16">MedDRA System organ class (SOC) </text>
+	<text transform="matrix(1 0 0 1 961.762 120.24)" class="st0 st1 st15">Sepsis</text>
+	<text transform="matrix(1 0 0 1 961.762 193.654)" class="st0 st1 st15">Hyperkalaemia</text>
+	<text transform="matrix(1 0 0 1 961.762 44.323)" class="st12 st8 st15">Adverse reaction</text>
+	<path class="st14" d="M933.3,0.3v74.2"/>
+	<g class="st11">
+		<path class="st12" d="M0,222.7h1359.6v75.8H0V222.7z"/>
+		<path class="st13" d="M0.5,223.2h1358.6V298H0.5V223.2z"/>
+	</g>
+	<g class="st11">
+		<path class="st12" d="M0,296.9h1359.6v75.8H0V296.9z"/>
+		<path class="st13" d="M0.5,297.4h1358.6v74.8H0.5V297.4z"/>
+	</g>
+	<path class="st13" d="M610.8,222.6v150.2"/>
+	<text transform="matrix(1 0 0 1 17.973 268.719)" class="st0 st1 st15">Psychiatric disorders </text>
+	<text transform="matrix(1 0 0 1 17.973 344.595)" class="st0 st1 st15">Nervous system disorders</text>
+	<path class="st13" d="M933.3,222.6v150.2"/>
+	<g>
+		<text transform="matrix(1 0 0 1 653.568 268.719)" class="st0 st1 st15">Common</text>
+		<text transform="matrix(1 0 0 1 653.568 344.595)" class="st0 st1 st15">Common</text>
+		<text transform="matrix(1 0 0 1 961.762 268.719)" class="st0 st1 st15">Insomnia</text>
+		<text transform="matrix(1 0 0 1 961.762 344.595)" class="st0 st1 st15">Seizures, headache</text>
+	</g>
+	<g class="st11">
+		<path class="st12" d="M0,372.1h1359.6v151H0V372.1z"/>
+		<path class="st13" d="M0.5,372.6h1358.6v150H0.5V372.6z"/>
+	</g>
+	<path class="st13" d="M610.8,372.8V523"/>
+	<text transform="matrix(1 0 0 1 17.973 418.094)" class="st0 st1 st15">Vascular disorders</text>
+	<path class="st13" d="M933.3,372.8V523"/>
+	<text transform="matrix(1 0 0 1 653.568 419.735)" class="st0 st1 st16">Very common </text>
+	<text transform="matrix(1 0 0 1 653.568 491.509)" class="st0 st1 st15">Common</text>
+	<text transform="matrix(1 0 0 1 961.762 419.094)" class="st0 st1 st16">Hypertension, vascular</text>
+	<text transform="matrix(1 0 0 1 961.762 450.094)" class="st0 st1 st16">access thrombosis (VAT)*</text>
+	<text transform="matrix(1 0 0 1 961.762 490.688)" class="st0 st1 st15">Deep vein thrombosis (DVT)</text>
+</g>
+<text transform="matrix(1 0 0 1 0 239)" class="st0 st1 st9">Adverse events listed in the SmPC were derived from the whole ALPINE programme, including trials in NDD patients vs. placebo</text>
+<text transform="matrix(1 0 0 1 0 283)" class="st0 st1 st9">or vs. ESA, as well as trials in DD patients vs. ESA</text>
+<text transform="matrix(1 0 0 1 703.6694 272.3344)" class="st0 st1 st10">1</text>
+<text transform="matrix(1 0 0 1 1591.75 95)" class="st0 st8 st17">EVRENZO (roxadustat)</text>
+<text transform="matrix(1 0 0 1 1553.2 125)" class="st0 st8 st17">IS NOT APPROVED FOR USE</text>
+<text transform="matrix(1 0 0 1 1578.55 155)" class="st0 st8 st17">IN THE UNITED STATES</text>
+<text transform="matrix(1 0 0 1 1561.175 19)" class="st0 st8 st17">This information is intended</text>
+<text transform="matrix(1 0 0 1 1565.35 49)" class="st0 st8 st17">for international audiences.</text>
+<g transform="translate(0 878.868)">
+	<g>
+		<g class="st11">
+			<path class="st12" d="M0,74.2h1359.6v150.1H0V74.2z"/>
+			<path class="st13" d="M0.5,74.7h1358.6v149.1H0.5V74.7z"/>
+		</g>
+		<g class="st11">
+			<path class="st12" d="M0,371.9h1359.6v75.8H0V371.9z"/>
+			<path class="st13" d="M0.5,372.4h1358.6v74.8H0.5V372.4z"/>
+		</g>
+		<g class="st11">
+			<path class="st12" d="M0,447h1359.6v75.8H0V447z"/>
+			<path class="st13" d="M0.5,447.5h1358.6v74.8H0.5V447.5z"/>
+		</g>
+		<path class="st13" d="M610.8,74.2v150.2"/>
+	</g>
+	<text transform="matrix(1 0 0 1 14.588 119.395)" class="st0 st1 st15">Gastrointestinal disorders</text>
+	<path class="st13" d="M933.3,74.2v150.2"/>
+	<text transform="matrix(1 0 0 1 653.567 121.06)" class="st0 st1 st16">Very common </text>
+	<text transform="matrix(1 0 0 1 652.168 193.654)" class="st0 st1 st15">Common</text>
+	<text transform="matrix(1 0 0 1 961.761 120.24)" class="st0 st1 st15">Nausea, diarrhoea</text>
+	<text transform="matrix(1 0 0 1 961.761 193.654)" class="st0 st1 st15">Constipation, vomiting</text>
+	<g class="st11">
+		<path class="st12" d="M0,222.7h1359.6v75.8H0V222.7z"/>
+		<path class="st13" d="M0.5,223.2h1358.6V298H0.5V223.2z"/>
+	</g>
+	<g class="st11">
+		<path class="st12" d="M0,296.9h1359.6v75.8H0V296.9z"/>
+		<path class="st13" d="M0.5,297.4h1358.6v74.8H0.5V297.4z"/>
+	</g>
+	<path class="st13" d="M610.8,222.6v150.2"/>
+	<text transform="matrix(1 0 0 1 14.588 344.5939)" class="st0 st1 st15">Hepatobiliary disorders </text>
+	<text transform="matrix(1 0 0 1 14.588 266.626)" class="st0 st1 st15">Skin and subcutaneous tissue disorders</text>
+	<text transform="matrix(1 0 0 1 14.588 420.47)" class="st0 st1 st15">Respiratory, thoracic, mediastinal disorders</text>
+	<path class="st13" d="M933.3,222.6v150.2"/>
+	<text transform="matrix(1 0 0 1 653.567 343.564)" class="st0 st1 st16">Uncommon</text>
+	<text transform="matrix(1 0 0 1 653.567 421.29)" class="st0 st1 st16">Uncommon</text>
+	<text transform="matrix(1 0 0 1 961.761 344.5939)" class="st0 st1 st15">Hyperbilirubinaemia</text>
+	<text transform="matrix(1 0 0 1 961.761 420.47)" class="st0 st1 st15">Pulmonary embolism </text>
+	<path class="st13" d="M610.8,372.8v150"/>
+	<text transform="matrix(1 0 0 1 14.588 479.6149)" class="st0 st1 st16">General disorders and administration</text>
+	<text transform="matrix(1 0 0 1 14.588 510.6149)" class="st0 st1 st16">site conditions </text>
+	<path class="st13" d="M933.3,372.8v150"/>
+	<text transform="matrix(1 0 0 1 652.168 493.884)" class="st0 st1 st16">Very common </text>
+	<text transform="matrix(1 0 0 1 961.761 493.884)" class="st0 st1 st15">Peripheral oedema</text>
+	<text transform="matrix(1 0 0 1 652.168 270.547)" class="st0 st1 st16">Not known</text>
+	<text transform="matrix(1 0 0 1 795.9758 260.2147)" class="st0 st1 st18">†</text>
+	<text transform="matrix(1 0 0 1 961.761 256.605)" class="st0 st1 st16">Dermatitis Exfoliative</text>
+	<text transform="matrix(1 0 0 1 961.761 286.605)" class="st0 st1 st16">Generalised (DEG)  </text>
+</g>
+</svg>

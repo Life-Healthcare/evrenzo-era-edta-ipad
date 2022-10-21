@@ -86,7 +86,7 @@ export default function App() {
       <AppReset />
       <Routes>
         <Route path="/" element={<Screensaver />} />
-        <Route path="/home" element={<Home />} />
+        {/* <Route path="/home" element={<Home />} /> */}
         <Route path="/page/:id" element={<Page />} />
       </Routes>
     </React.Suspense>

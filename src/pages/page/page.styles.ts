@@ -11,28 +11,43 @@ export const PageWrapper = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
-  padding-bottom: calc(127px * var(--scale-y));
+  padding-left: calc(136px * var(--scale-y));
 
   &.id-1 ${PageImage} {
-    width: calc(1403.02px * var(--scale-x));
+    width: calc(1867px * var(--scale-x));
   }
 
   &.id-2 ${PageImage} {
-    width: calc(1589.03px * var(--scale-x));
+    width: calc(1869px * var(--scale-x));
   }
 
   &.id-3 ${PageImage} {
-    width: calc(825.81px * var(--scale-x));
+    width: calc(1867px * var(--scale-x));
   }
 
   &.id-4 ${PageImage} {
-    width: calc(1272.84px * var(--scale-x));
+    width: calc(1867px * var(--scale-x));
   }
 
   &.id-5 ${PageImage} {
-    width: calc(588.72px * var(--scale-x));
+    width: calc(1877px * var(--scale-x));
+  }
+
+  &.id-6 ${PageImage} {
+    width: calc(1877px * var(--scale-x));
+  }
+
+  &.id-7 ${PageImage} {
+    width: calc(1867px * var(--scale-x));
+  }
+
+  &.id-8 {
+    background-image: url(./assets/page/background.png);
+  }
+  &.id-8 ${PageImage} {
+    width: calc(1867px * var(--scale-x));
   }
 `;
 

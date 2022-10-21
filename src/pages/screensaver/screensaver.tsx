@@ -39,7 +39,7 @@ export default function Screensaver() {
           </Card>
         </Modal>
       )} */}
-      <Link to="/home">
+      <Link to="/page/1">
         <ScreensaverWrapper>
           <ScreensaverContainer>
             <ScreensaverLogo src="./assets/logo.svg" alt="" />
