@@ -18,9 +18,9 @@ type SessionData = {
 class SessionManager {
   private serverEndpoint = "https://analytics-server.finervision.com/api/save-sessions";
 
-  private cacheKeyPrefix = "evrenzo-era-edta-ipad";
+  private cacheKeyPrefix = "evrenzo-era-edta-ipad-2";
 
-  private projectId = "evrenzo-era-edta-ipad";
+  private projectId = "evrenzo-era-edta-ipad-2";
 
   private readonly deviceId;
 
