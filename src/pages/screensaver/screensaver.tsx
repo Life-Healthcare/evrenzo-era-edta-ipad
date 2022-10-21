@@ -3,12 +3,11 @@ import { Link } from "react-router-dom";
 import {
   ScreensaverWrapper,
   ScreensaverContainer,
-  ScreensaverInformation,
+  ScreensaverCopy,
   ScreensaverLogo,
   ScreensaverTitle,
-  ScreensaverIntroduction,
-  ScreensaverDisclaimer,
-  ScreensaverStart,
+  ScreensaverTitle2,
+  ScreensaverLegalNotice,
   Card,
 } from "@/pages/screensaver/screensaver.styles";
 import LegalNotice from "@/components/legal-notice/legal-notice";
@@ -17,14 +16,14 @@ import LegalPdf from "@/pdf/pdf";
 import sessionManager from "@/services/session-manager";
 
 export default function Screensaver() {
-  const [pdfIsShown, setPdfIsShown] = React.useState(false);
-  const showCartHandler = () => {
-    setPdfIsShown(true);
-  };
+  // const [pdfIsShown, setPdfIsShown] = React.useState(false);
+  // const showCartHandler = () => {
+  //   setPdfIsShown(true);
+  // };
 
-  const hideCartHandler = () => {
-    setPdfIsShown(false);
-  };
+  // const hideCartHandler = () => {
+  //   setPdfIsShown(false);
+  // };
 
   React.useEffect(() => {
     sessionManager.end();
@@ -32,39 +31,31 @@ export default function Screensaver() {
 
   return (
     <>
-      {pdfIsShown && (
+      {/* {pdfIsShown && (
         <Modal onClose={() => hideCartHandler()}>
           <Card>
             <LegalPdf prefix="./assets/legal-pdf" pages={53} />
             <button onClick={() => hideCartHandler()}>X</button>
           </Card>
         </Modal>
-      )}
-      <ScreensaverWrapper>
-        <ScreensaverContainer>
-          <ScreensaverLogo src="./assets/logo.svg" alt="" />
+      )} */}
+      <Link to="/home">
+        <ScreensaverWrapper>
+          <ScreensaverContainer>
+            <ScreensaverLogo src="./assets/logo.svg" alt="" />
+            <ScreensaverTitle2 src="./assets/screensaver/title2.svg" alt="" />
+            <ScreensaverTitle src="./assets/screensaver/title.svg" alt="" />
+          </ScreensaverContainer>
 
-          <ScreensaverTitle src="./assets/screensaver/title.svg" alt="" />
+          <ScreensaverCopy>
+            <img src="./assets/screensaver/copy.svg" alt="" />
+          </ScreensaverCopy>
 
-          <ScreensaverIntroduction
-            src="./assets/screensaver/introduction.svg"
-            alt=""
-          />
-          <ScreensaverDisclaimer
-            src="./assets/screensaver/disclaimer.svg"
-            alt=""
-          />
-          <Link to="/home">
-            <ScreensaverStart src="./assets/screensaver/start.svg" alt="" />
-          </Link>
-        </ScreensaverContainer>
-
-        <ScreensaverInformation onClick={showCartHandler}>
-          <img src="./assets/screensaver/information.svg" alt="" />
-        </ScreensaverInformation>
-
-        <LegalNotice showSecondLegalNotice />
-      </ScreensaverWrapper>
+          <ScreensaverLegalNotice>
+            <img src="./assets/screensaver/legal.svg" alt="" />
+          </ScreensaverLegalNotice>
+        </ScreensaverWrapper>
+      </Link>
     </>
   );
 }

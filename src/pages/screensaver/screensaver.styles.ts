@@ -1,39 +1,27 @@
 import styled from "styled-components";
 
-export const ScreensaverIntroduction = styled.img`
-  margin-inline: auto;
-  margin-top: calc(34px * var(--scale-y));
-  width: calc(1400px * var(--scale-x));
-`;
-
 export const ScreensaverTitle = styled.img`
   margin-inline: auto;
-  margin-top: calc(158px * var(--scale-y));
-  width: calc(1519px * var(--scale-x));
+  margin-top: calc(111px * var(--scale-y));
+  width: calc(1413px * var(--scale-x));
 `;
 
-export const ScreensaverDisclaimer = styled.img`
+export const ScreensaverTitle2 = styled.img`
   margin-inline: auto;
-  margin-top: calc(264px * var(--scale-y));
-  width: calc(529px * var(--scale-x));
-`;
-
-export const ScreensaverStart = styled.img`
-  margin-inline: auto;
-  margin-top: calc(34px * var(--scale-y));
-  width: calc(578px * var(--scale-x));
-  pointer-events: auto;
+  margin-top: calc(92px * var(--scale-y));
+  width: calc(799px * var(--scale-x));
 `;
 
 export const ScreensaverLogo = styled.img`
   width: calc(396px * var(--scale-x));
+  position: fixed;
 `;
 
-export const ScreensaverInformation = styled.div`
+export const ScreensaverCopy = styled.div`
   position: absolute;
-  top: calc(1359px * var(--scale-y));
-  left: calc(1442px * var(--scale-x));
-  width: calc(496px * var(--scale-x));
+  bottom: calc(57px * var(--scale-y));
+  left: calc(1357px * var(--scale-x));
+  width: calc(624px * var(--scale-x));
 
   & img {
     width: 100%;
@@ -42,9 +30,9 @@ export const ScreensaverInformation = styled.div`
 
 export const ScreensaverContainer = styled.div`
   width: 100%;
-  max-width: calc(1880px * var(--scale-x));
   margin-inline: auto;
-  padding-top: calc(150px * var(--scale-y));
+  padding-top: calc(115px * var(--scale-y));
+  padding-left: calc(135px * var(--scale-x));
 `;
 
 export const ScreensaverWrapper = styled.div`
@@ -54,6 +42,12 @@ export const ScreensaverWrapper = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
+`;
+
+export const ScreensaverLegalNotice = styled.div`
+  position: absolute;
+  left: calc(136px * var(--scale-x));
+  bottom: calc(57px * var(--scale-y));
 `;
 
 export const Card = styled.div`
