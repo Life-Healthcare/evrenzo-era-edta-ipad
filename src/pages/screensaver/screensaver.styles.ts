@@ -48,6 +48,7 @@ export const ScreensaverLegalNotice = styled.div`
   position: absolute;
   left: calc(136px * var(--scale-x));
   bottom: calc(57px * var(--scale-y));
+  width: calc(1178px * var(--scale-x));
 `;
 
 export const Card = styled.div`
