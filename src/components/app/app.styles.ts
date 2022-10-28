@@ -1,6 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 
-export const AppReset = createGlobalStyle`
+interface AppResetProps {
+  last: boolean
+}
+
+export const AppReset = createGlobalStyle<AppResetProps>`
   @import url("./fonts.css");
 
   :root {
@@ -42,7 +46,7 @@ export const AppReset = createGlobalStyle`
     line-height: 1em;
     background-color: #1e1e1e;
     color: #fefefe;
-    background-image: url("./assets/background.jpg");
+    ${props => props.last ? 'background-image: url(./assets/page/background.png);' : `background-image: url("./assets/background.jpg");`}
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
