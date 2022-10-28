@@ -50,6 +50,7 @@ export const AppReset = createGlobalStyle<AppResetProps>`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
+    background-size: cover;
   }
 
   svg, img, video {
