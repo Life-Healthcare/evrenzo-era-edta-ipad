@@ -43,9 +43,6 @@ export const PageWrapper = styled.div`
     width: calc(1867px * var(--scale-x));
   }
 
-  &.id-8 {
-    background-image: url(./assets/page/background.png);
-  }
   &.id-8 ${PageImage} {
     width: calc(1867px * var(--scale-x));
   }
