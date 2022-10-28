@@ -80,6 +80,8 @@ export default function App() {
       clearTimeout(timeout);
     };
   }, [navigate, pathname]);
+  
+  const location = useLocation();
 
   return (
     <React.Suspense fallback="Loading...">
