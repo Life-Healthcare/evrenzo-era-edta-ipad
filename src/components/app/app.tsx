@@ -83,7 +83,7 @@ export default function App() {
 
   return (
     <React.Suspense fallback="Loading...">
-      <AppReset />
+      <AppReset last={location.pathname === "/page/8"} />
       <Routes>
         <Route path="/" element={<Screensaver />} />
         {/* <Route path="/home" element={<Home />} /> */}
