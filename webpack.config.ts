@@ -125,6 +125,7 @@ export default () => {
         clientsClaim: true,
         skipWaiting: true,
         maximumFileSizeToCacheInBytes: 1000000 * 50,
+        swDest: path.join(BUILD_DIR, "sw.js"),
       })
     );
   }
